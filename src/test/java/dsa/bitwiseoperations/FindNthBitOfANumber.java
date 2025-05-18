@@ -17,7 +17,7 @@ public class FindNthBitOfANumber {
     }
 
     private static int findIthBit(int n, int i) {
-        return ((n >> i - 1) & 1) == 1 ? 1 : 0;
+        return n & 1 << i - 1;
     }
 
     private static int setIthBit(int m, int j) {
